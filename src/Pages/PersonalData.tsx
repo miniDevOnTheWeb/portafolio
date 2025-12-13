@@ -2,7 +2,7 @@ export function PersonalData() {
     return (
         <div className="section-page" id="personal-data-section">
             <div className="personal-data">
-                <h2>Datos personales</h2>
+                <h3>Datos personales</h3>
                 <div className="info-data">
                     <div className="nombres">
                         <div className="data-piece">

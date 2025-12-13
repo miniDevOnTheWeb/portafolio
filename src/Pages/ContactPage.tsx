@@ -1,4 +1,4 @@
-import { MdiFacebook, MdiGithub, MdiInstagram, MdiWhatsapp, MynauiTelephone, TablerMail } from "../components/Icons";
+import { MdiFacebook, MdiInstagram, MdiWhatsapp, MynauiTelephone, TablerMail } from "../components/Icons";
 
 export function ContactPage() {
     return (
@@ -20,9 +20,6 @@ export function ContactPage() {
                     </li>
                     <li className="contact-way">    
                         <a href="mailto:diegocornejo958@gmail.com"><TablerMail width={24} /> diegocornejo958@gmail.com</a>
-                    </li>
-                    <li className="contact-way">
-                        <a href="https://github.com/TheCat-codes"><MdiGithub width={24} /> TheCat-codes</a>
                     </li>
                 </ul>
             </div>

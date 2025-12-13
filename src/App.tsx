@@ -5,6 +5,7 @@ import { SkillsPage } from "./Pages/Skills"
 import { StudiesPage } from "./Pages/StudiesPage"
 import { WelcomePage } from "./Pages/WelcomePage"
 import './index.css'
+import { ExplainedSkillsPage } from "./Pages/ExplainedSkills"
 function App() {
   return (
     <main className="main-page">
@@ -14,6 +15,7 @@ function App() {
       <SkillsPage />
       <StudiesPage />
       <ContactPage />
+      <ExplainedSkillsPage />
     </main>
   )
 }
