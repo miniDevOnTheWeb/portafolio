@@ -38,8 +38,8 @@ export function SkillsPage() {
                     <h4>DB y Otros</h4>
                     <ul className="skills-list">
                         <li className="skill"><DeviconPlainMysql width={20} /> MySQL</li>
-                        <li className="skill"><DeviconPlainMysql width={20} /> MariaDB</li>
-                        <li className="skill"><SimpleIconsMariadb width={20} /> Docker</li>
+                        <li className="skill"><SimpleIconsMariadb width={20} /> MariaDB</li>
+                        <li className="skill"><MdiDocker width={20} /> Docker</li>
                         <li className="skill"><MdiGit width={20} /> Git</li>
                     </ul>
                 </div>
