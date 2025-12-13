@@ -1,8 +1,11 @@
+:root {
+  --font-family: Cascadia Mono;
+}
 
 body {
   margin: 0;
   font-family: var(--font-family);
-  scroll-behavior: smooth;
+  font-weight: 300;
 }
 
 h1, h4, p, h3, h5, h2 {
@@ -17,6 +20,7 @@ h1, h4, p, h3, h5, h2 {
   height: 100dvh;
   overflow: auto;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .main-page {
@@ -62,6 +66,8 @@ h1, h4, p, h3, h5, h2 {
 .nav-bar-item a {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  align-items: center;
 }
 
 .nav-bar-item:hover {
@@ -75,13 +81,20 @@ h1, h4, p, h3, h5, h2 {
 .section-page {
   min-height: 100dvh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid #fff;
+  background-color: #111;
 }
 
 #welcome-section {
  background-color: linear-gradient(to bottom, #000, #333) !important; 
+}
+
+.animation {
+  width: 100px;
+  height: 100px;
 }
 
 .profile-image {
@@ -97,7 +110,19 @@ h1, h4, p, h3, h5, h2 {
   cursor: pointer;
 }
 
-.welcome-page {
+.name-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.my-name {
+  color: #fff;
+  font-weight: bold;
+}
+
+.welcome-data {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -142,8 +167,12 @@ h1, h4, p, h3, h5, h2 {
   transition: all ease-in-out 0.3s;
 }
 
+.data-piece > strong {
+    font-size: 12px;
+}
+
 .data-piece > span {
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .data-piece::before {
@@ -174,12 +203,6 @@ h1, h4, p, h3, h5, h2 {
   transform: scale(1.02);
 }
 
-@keyframes arcoirisOscuro {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 .nombres, .fechas, .address {
   display: flex;
   gap: 20px;
@@ -208,7 +231,7 @@ h1, h4, p, h3, h5, h2 {
   color: #fff;
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .contact-way:hover {
@@ -221,6 +244,20 @@ h1, h4, p, h3, h5, h2 {
   border: 1px solid #444;
   width: 100%;
   border-radius: 8px;
+}
+
+.study-fieldset:hover {
+  cursor: pointer;
+  animation: fieldset 1.5s linear infinite alternate-reverse;
+}
+
+@keyframes fieldset {
+  from {
+    border-color: #444 ;
+  }
+  to {
+    border-color: #1f364d ;
+  }
 }
 
 .studies-page > h3 {
@@ -287,7 +324,7 @@ h1, h4, p, h3, h5, h2 {
   padding: 5px;
   border-radius: 8px;
   border: 1px solid #1f364d;
-  font-size: 12px;
+  font-size: 11px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -299,6 +336,10 @@ h1, h4, p, h3, h5, h2 {
 .skill:hover {
   cursor: pointer;
   background-color: #1f364d;
+}
+
+.welcome-text {
+  font-size: 13px;
 }
 
 .link {
@@ -333,14 +374,42 @@ h1, h4, p, h3, h5, h2 {
   gap: 5px;
 }
 
+.exp-skill > strong {
+  font-size: 12px;
+}
+
 .exp-skill > p {
   margin: 0;
-  font-size: 12px;
+  font-size: 11px;
   color: #ccc;
 }
 
+#contact, #skills, #studies, #personal-data-section, #welcome-section {
+  background: linear-gradient(
+        45deg,
+        #000,
+        #444,
+        #111,
+        #111,
+        #000,
+        #111,
+        #444,
+        #111,
+        #444
+    );
+    background-size: 400% 400%;
+  animation: arcoirisOscuro linear 5s infinite alternate;
+}
+
+
 
 /* ANIMACIONES */
+
+@keyframes arcoirisOscuro {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
 @keyframes navbar {
   from {
@@ -369,10 +438,46 @@ h1, h4, p, h3, h5, h2 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:740px) and (min-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar-span  { display: none;}
+
+  .nav-bar-list {
+    gap: 5px;
+  }
+
   .address {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .name-container {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .my-name {
+    font-size: 20px;
+  }
+
+  .animation {
+    height: 100%;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .welcome-data {
+    flex-direction: column;
+    gap: 15px;
   }
 }

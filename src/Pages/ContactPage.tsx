@@ -4,7 +4,7 @@ export function ContactPage() {
     return (
         <div className="section-page" id="contact">
             <div className="contact-page">
-                <h3>Formas de contactarme</h3>
+                <h3>Formas de contacto</h3>
                 <ul className="contacts-list">
                     <li className="contact-way">
                         <a href="https://www.facebook.com/Diego"><MdiFacebook width={24} /> Diego Alexander Cornejo Menjivar</a>

@@ -2,6 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
+// 7b652a3f966c.ngrok-free.app
 export default defineConfig({
   plugins: [react()],
+  server: {
+    allowedHosts: ['7b652a3f966c.ngrok-free.app']
+  }
 })
