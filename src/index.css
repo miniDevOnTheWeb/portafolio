@@ -135,6 +135,8 @@ h2 {
   background-color: #333;
   transition: all ease-in-out 0.3s;
   border: 3px solid #fff;
+  filter: grayscale(50%);
+  box-sizing: border-box;
 }
 
 .profile-image:hover {
@@ -309,7 +311,7 @@ h2 {
 .study-fieldset-title {
   font-size: 13px;
   padding: 10px;
-  color: #2f3f4f;
+  color: #aaa;
 }
 
 .study-fieldset>p {
@@ -369,6 +371,7 @@ h2 {
 
 .skill-group>h4 {
   font-size: 13px;
+  color: #aaa;
 }
 
 .skill {
@@ -386,11 +389,13 @@ h2 {
 
 .skill:hover {
   cursor: pointer;
-  background-color: #1f364d;
+  background-color: #aaa;
+  color: #000;
 }
 
 .welcome-text {
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -442,13 +447,12 @@ h2 {
 #personal-data-section,
 #welcome-section {
   background: linear-gradient(45deg,
-      #4b0082,
-      #2e1a47,
-      #1f364d,
-      #2b4a3f,
-      #4b3f2b,
-      #4b002b,
-      #4b0082);
+      #050505,
+      #1a0b2e,
+      #0b1a2e,
+      #1a0b2e,
+      #050505);
+
   background-size: 400% 400%;
   animation: arcoirisOscuro linear 5s infinite alternate;
 }
