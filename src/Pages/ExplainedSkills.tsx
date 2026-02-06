@@ -25,13 +25,13 @@ export function ExplainedSkillsPage() {
                     <div className="exp-skill">
                         <strong>React</strong>
                         <p className="content">
-                            Tras haber aprendido una forma de crear backend con Node JS, cambie a el enfoque de la UI, aprendi a crear interfaces de usuario con React, aprendi a crear componentes, manejar estados, hooks, enrutamiento con react-router-dom,estructuras de proyectos, props, etc, y luego pase a utilizarlo pero con TypeScript para tener mayor control de los tipos de datos, React es mi libreria de front favorita, es muy versatil y mis proyectos casi en su totalidad los he realizado con ello, he usado stores para manejar el logueo de usuario, como redux js toolkit, zustand, y react query.          
+                            Tras haber aprendido una forma de crear backend con Node JS, cambie a el enfoque de la UI, aprendi a crear interfaces de usuario con React, aprendi a crear componentes, manejar estados, hooks, enrutamiento con react-router-dom,estructuras de proyectos, props, etc, y luego pase a utilizarlo pero con TypeScript para tener mayor control de los tipos de datos, React es mi libreria de front favorita, es muy versatil y mis proyectos casi en su totalidad los he realizado con ello, he usado stores para manejar el logueo de usuario, como redux js toolkit, zustand, y react query.
                         </p>
                     </div>
                     <div className="exp-skill">
                         <strong>Spring Framework</strong>
                         <p className="content">
-                            Despues de aprender las bases de Java, POO, pase a Spring, aprendi a crear apis rest con SpringBoot, crear servicios, manejar base de datos con JPA Repository, crear proyectos de backend muy grandes, manejo de archivos en la nube, autenticacion con jwt, cruds, un poco de Testing etc, y debo decir que es mi framework favorito para el backend.
+                            Despues de aprender las bases de Java, POO, pase a Spring, aprendi a crear apis rest con SpringBoot, crear servicios, manejar base de datos con JPA Repository, crear proyectos de backend muy grandes, manejo de archivos en la nube, autenticacion con jwt, cruds, un poco de Testing y lo principal uniendo todo es los microservicios para tener un mejor control de las aplicaciones y evitar catastrofes, y debo decir que es mi framework favorito para el backend.
                         </p>
                     </div>
                     <div className="exp-skill">
@@ -47,9 +47,9 @@ export function ExplainedSkillsPage() {
                         </p>
                     </div>
                     <div className="exp-skill">
-                        <strong>MySQL y MariaDB</strong>
+                        <strong>MySQL, MariaDB, PostgresSQL</strong>
                         <p className="content">
-                            MySql y MariaDb son mis dos bases de datos de conocimiento, aunque no me dedico principalmente al manejo de bases de datos se usarlas y crear mis databases para mis proyectos, se crear procedimientos almacenados, llaves foraneas, vistas, indexes, etc, creo que se lo necesario para tener un buen manejo de las db.
+                            Estas tres son mis bases de datos de conocimiento, aunque no me dedico principalmente al manejo de bases de datos se usarlas y crear mis databases para mis proyectos, se crear procedimientos almacenados, llaves foraneas, vistas, indexes, etc, creo que se lo necesario para tener un buen manejo de las db.
                         </p>
                     </div>
                     <div className="exp-skill">

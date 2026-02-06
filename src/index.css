@@ -8,7 +8,12 @@ body {
   font-weight: 300;
 }
 
-h1, h4, p, h3, h5, h2 {
+h1,
+h4,
+p,
+h3,
+h5,
+h2 {
   margin: 0;
   padding: 0;
 }
@@ -30,25 +35,24 @@ h1, h4, p, h3, h5, h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(
-    90deg,
-    rgb(44, 12, 76),
-    rgb(58, 18, 98),
-    rgb(72, 24, 120),
-    rgb(96, 32, 112),
-    rgb(128, 36, 95),
-    rgb(110, 30, 78),
-    rgb(92, 24, 61)
-  );
+  background: linear-gradient(90deg,
+      rgb(44, 12, 76),
+      rgb(58, 18, 98),
+      rgb(72, 24, 120),
+      rgb(96, 32, 112),
+      rgb(128, 36, 95),
+      rgb(110, 30, 78),
+      rgb(92, 24, 61));
   background-size: 400% 400%;
   animation: navbar 2s linear infinite alternate-reverse;
 }
 
 @keyframes navbar {
-  from { 
+  from {
     background-position: 0 0;
   }
-  to { 
+
+  to {
     background-position: 100% 100%;
   }
 }
@@ -116,7 +120,7 @@ h1, h4, p, h3, h5, h2 {
 }
 
 #welcome-section {
- background-color: linear-gradient(to bottom, #000, #333) !important; 
+  background-color: linear-gradient(to bottom, #000, #333) !important;
 }
 
 .animation {
@@ -125,11 +129,12 @@ h1, h4, p, h3, h5, h2 {
 }
 
 .profile-image {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: #333;
   transition: all ease-in-out 0.3s;
+  border: 3px solid #fff;
 }
 
 .profile-image:hover {
@@ -158,7 +163,9 @@ h1, h4, p, h3, h5, h2 {
   max-width: 1000px;
 }
 
-.personal-data, .contact-page, .studies-page {
+.personal-data,
+.contact-page,
+.studies-page {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -167,14 +174,17 @@ h1, h4, p, h3, h5, h2 {
   max-width: 800px;
 }
 
-.contact-page > h3 { margin: 0;}
+.contact-page>h3 {
+  margin: 0;
+}
 
-.personal-data > h3 {
+.personal-data>h3 {
   padding: 0;
   margin: 0;
 }
 
-.info-data, .studies-page {
+.info-data,
+.studies-page {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -195,35 +205,33 @@ h1, h4, p, h3, h5, h2 {
   transition: all ease-in-out 0.3s;
 }
 
-.data-piece > strong {
-    font-size: 12px;
+.data-piece>strong {
+  font-size: 12px;
 }
 
-.data-piece > span {
-    font-size: 11px;
+.data-piece>span {
+  font-size: 11px;
 }
 
 .data-piece::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    border-radius: inherit;
-    background: linear-gradient(
-        90deg,
-        #4b0082,
-        #2e1a47,
-        #1f364d,
-        #2b4a3f,
-        #4b3f2b,
-        #4b002b,
-        #4b0082
-    );
-    background-size: 400% 400%;
-    z-index: -1;
-    animation: arcoirisOscuro 6s linear infinite;
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: inherit;
+  background: linear-gradient(90deg,
+      #4b0082,
+      #2e1a47,
+      #1f364d,
+      #2b4a3f,
+      #4b3f2b,
+      #4b002b,
+      #4b0082);
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: arcoirisOscuro 6s linear infinite;
 }
 
 .data-piece:hover {
@@ -231,7 +239,9 @@ h1, h4, p, h3, h5, h2 {
   transform: scale(1.02);
 }
 
-.nombres, .fechas, .address {
+.nombres,
+.fechas,
+.address {
   display: flex;
   gap: 20px;
 }
@@ -255,7 +265,7 @@ h1, h4, p, h3, h5, h2 {
   font-size: 12px;
 }
 
-.contact-way > a {
+.contact-way>a {
   text-decoration: none;
   color: #fff;
   display: flex;
@@ -282,14 +292,15 @@ h1, h4, p, h3, h5, h2 {
 
 @keyframes fieldset {
   from {
-    border-color: #444 ;
+    border-color: #444;
   }
+
   to {
-    border-color: #1f364d ;
+    border-color: #1f364d;
   }
 }
 
-.studies-page > h3 {
+.studies-page>h3 {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -301,13 +312,16 @@ h1, h4, p, h3, h5, h2 {
   color: #2f3f4f;
 }
 
-.study-fieldset > p {
+.study-fieldset>p {
   font-size: 11px;
 }
 
-.minor-span { font-size: 11px; color: #ddd;}
+.minor-span {
+  font-size: 11px;
+  color: #ddd;
+}
 
-.study { 
+.study {
   padding: 5px 0px;
   margin: 0;
   font-size: small;
@@ -349,18 +363,18 @@ h1, h4, p, h3, h5, h2 {
   align-items: center;
 }
 
-.skill-group > h4 {
+.skill-group>h4 {
   color: #1f364d;
 }
 
-.skill-group > h4 {
+.skill-group>h4 {
   font-size: 13px;
 }
 
 .skill {
   padding: 5px;
   border-radius: 8px;
-  border: 1px solid #1f364d;
+  border: 1px solid #999;
   font-size: 11px;
   width: 100%;
   box-sizing: border-box;
@@ -400,7 +414,7 @@ h1, h4, p, h3, h5, h2 {
   padding: 20px;
 }
 
-.explained-layout > h2 {
+.explained-layout>h2 {
   text-align: center;
   font-size: large;
 }
@@ -412,30 +426,30 @@ h1, h4, p, h3, h5, h2 {
   gap: 5px;
 }
 
-.exp-skill > strong {
+.exp-skill>strong {
   font-size: 13px;
 }
 
-.exp-skill > p {
+.exp-skill>p {
   margin: 0;
   font-size: 11px;
   color: #ccc;
 }
 
-#contact, #skills, #studies, #personal-data-section, #welcome-section {
-  background: linear-gradient(
-        45deg,
-        #000,
-        #444,
-        #111,
-        #111,
-        #000,
-        #111,
-        #444,
-        #111,
-        #444
-    );
-    background-size: 400% 400%;
+#contact,
+#skills,
+#studies,
+#personal-data-section,
+#welcome-section {
+  background: linear-gradient(45deg,
+      #4b0082,
+      #2e1a47,
+      #1f364d,
+      #2b4a3f,
+      #4b3f2b,
+      #4b002b,
+      #4b0082);
+  background-size: 400% 400%;
   animation: arcoirisOscuro linear 5s infinite alternate;
 }
 
@@ -444,15 +458,24 @@ h1, h4, p, h3, h5, h2 {
 /* ANIMACIONES */
 
 @keyframes arcoirisOscuro {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes scroll-down {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(100%);
   }
@@ -462,6 +485,7 @@ h1, h4, p, h3, h5, h2 {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-2px);
   }
@@ -475,7 +499,9 @@ h1, h4, p, h3, h5, h2 {
 }
 
 @media screen and (max-width: 600px) {
-  .nav-bar-span  { display: none;}
+  .nav-bar-span {
+    display: none;
+  }
 
   .nav-bar-list {
     gap: 5px;
